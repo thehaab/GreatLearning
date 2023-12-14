@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Hammer",
+    "description": "forged 9oz head with hickory handle",
+    "price":5000
+  },
+  {
+    "name": "Video game controller",
+    "description": "for use with linux consoles",
+    "price":15000
+  }
+]
+
