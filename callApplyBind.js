@@ -15,3 +15,11 @@ greet.foo = function () {
 }
 
 greet.foo();
+
+//call
+
+greet.call('Hello. ', 'Good evening, ', 'Mary');
+
+var args = [ 'Good evening, ', 'Mary'];
+greet.apply( 'hello', args);
+
