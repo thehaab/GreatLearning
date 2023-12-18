@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Page with JS Modifications</title>
+</head>
+<body>
+
+    <h2 class="header">Heading 2</h2>
+    <h3 class="header">Heading 3</h3>
+
+    <p class="paragraph">Paragraph 1</p>
+    <p class="paragraph">Paragraph 2</p>
+
+    <div id="div">
+        <!-- New h1 will be added here using JavaScript -->
+    </div>
+
+    <script>
+        // Printing content of paragraph tags in the console
+        var paragraphs = document.querySelectorAll('.paragraph');
+        paragraphs.forEach(function(paragraph) {
+            console.log(paragraph.textContent);
+        });
+
+        // Adding a new h1 inside the div tag
+        var newH1 = document.createElement('h1');
+        newH1.textContent = 'New Heading 1';
+        document.getElementById('div').appendChild(newH1);
+
+        // Changing text of header tags and paragraph tags
+        var headers = document.querySelectorAll('.header');
+        headers.forEach(function(header) {
+            header.textContent = 'HEADINGS';
+        });
+
+        paragraphs.forEach(function(paragraph) {
+            paragraph.textContent = 'PARAGRAPH';
+        });
+    </script>
+
+</body>
+</html>
